@@ -1,0 +1,12 @@
+version: '2.1'
+
+services:
+
+  users-service:
+    container_name: mija-project
+    build: .
+    # volumes:
+      # - .:/usr/src/app
+    ports:
+      - 5001:5000 # expose ports - HOST:CONTAINER
+    tty: true
